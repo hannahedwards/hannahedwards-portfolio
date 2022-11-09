@@ -6,6 +6,9 @@
 
 body{
   background-color: #FCEDDA;
+  max-width: 100%;
+  display: block;
+  
 }
 
 .header {
@@ -13,7 +16,8 @@ body{
   font-family: "Lucida Console", "Courier New", monospace;
   background-color: #EE4E34;
   color: #FCEDDA;
-
+  max-width: 100%;
+  display: block;
 }
 
 .header h1 {
@@ -53,6 +57,8 @@ background-color: #FCEDDA;
 color: #EE4E34;
 text-align: left;
 font-size: xx-large;
+max-width: 100%;
+display: block;
 }
 
 .about-me img{
@@ -64,7 +70,7 @@ font-size: xx-large;
 }
 
 .bio{
-  margin-left: 7%;
+  margin-left: 20%;
   margin-right: 30px;
   margin-top: 50px;
   margin-bottom: 15px;
@@ -73,29 +79,29 @@ font-size: xx-large;
 .work-lable{
   font-size: xx-large;
   border: 7px solid #EE4E34;
-  padding: 10px 10px;
-  margin-left: 45%;
-  margin-right: 45%;
-  margin-top: 1px;
+  margin-left: 20%;
+  margin-right: 20%;
   margin-bottom: 15px;
-  font-family: "Lucida Console", "Courier New", monospace;;
+  font-family: "Lucida Console", "Courier New", monospace;
   color: #EE4E34;
 }
+
 
 .my-work {
   border: 10px solid #EE4E34;
   margin: 100px;
   padding: 30px 30px;
+  font-family: "Lucida Console", "Courier New", monospace;
   text-align: center;
-  font-family: "Lucida Console", "Courier New", monospace;;
 }
 
 .Horiseon  {
   display: inline-block;
   border: 5px solid #EE4E34;
   padding: 5px 30px;
-  margin-right: 600px;
-  text-align: left;
+  text-align: center;
+  max-width: 100%;
+  display: block;
 }
 
 #Horiseon-label, #this-webpage-lable{
@@ -104,13 +110,6 @@ font-size: xx-large;
 
 .my-work ul li p {
   font-size: 20px;
-}
-
-.this-webpage  {
-  display: inline-block;
-  border: 5px solid #EE4E34;
-  padding: 5px 30px;
-  text-align: left;
 }
 
 .my-work ul img{
@@ -122,6 +121,20 @@ font-size: xx-large;
   list-style: none;
   font-size: large;
   color: #EE4E34;
+ 
+}
+
+.this-webpage  {
+  display: inline-block;
+  border: 5px solid #EE4E34;
+  padding: 5px 30px;
+  text-align: center;
+}
+
+.Horiseon {
+  display: inline-block;
+  border: 5px solid #EE4E34;
+  padding: 5px 30px;
   text-align: center;
 }
 
@@ -142,4 +155,13 @@ font-size: xx-large;
   list-style: none;
   font-size: 25px;
   color: #EE4E34;
+}
+
+@media screen and (max-width: 768px) {
+  header,
+  nav, 
+  ul,
+  li{
+    flex-direction: column;
+  }
 }
