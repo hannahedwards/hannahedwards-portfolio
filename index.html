@@ -2,26 +2,65 @@
 <html lang="en"
 <head>
     <meta charset="UTF-8" />
-    <title>Student Bio</title>
+    <title>Hannah Edwards Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-    <header id="top">
-        <h1 class="title">Student Bio</h1>
-    </header>
-        <section>
-            <h2 class="title">Hannah Edwards</h2>
-            <img src="./assest/my-image2.JPG" alt="temp image" width="200"  >
-            <p>This is a space to write about me.</p>
-        </section>
-
-        <section>
-            <h2 class="title">Contact information</h2>
+    <header class="header"">
+        <h1>Hannah Edwards</h1>
+        <nav>
             <ul>
-                <li><strong>Email:</strong></li>
-                <li><strong>GitHub:</strong></li>
-                <li><strong>Portfolio:</strong></li>
+                <li>
+                    <a href="#about-me">About me</a>
+                </li>
+                <li>
+                    <a href="#my-work">My work</a>
+                </li>
+                <li>
+                    <a href="#contact-me">Contact me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>    
+    <main>   
+        <section class="about-me">  
+            <img src="./assets/my-image2.JPG" alt="picture of me" width="200">
+            <h1 class="bio"><u>About Me:</u></h1>
+            <p class="bio">My name is Hannah Edwards! I started a fullstack coding bootcamp in October 2022. I'm exicted to grow my skills and passion for coding. Below are websites I have built and worked on so enjoy!</p>
+        </section>
+    <div class="my-work"> 
+        <section class="work-lable">My Work!</section>
+        <section class="Horiseon">
+            <ul>
+                <li>
+                <label id="Horiseon-label"><strong><u>Horiseon webpage</u></strong></label>
+                </li>
+                <img src="./assets/Screen Shot 2022-10-27 at 10.48.01 PM.png" alt="sceenshot of webpage">
+                <li>
+                    <p>This was a project were I had to refactor the code so it was up to date with <br> accessibilty standards</p>
+                </li>
+            </ul>
+        </section>  
+        <section class="this-webpage"> 
+            <ul>
+                <li>
+                    <label id="this-webpage-lable"><strong><u>This webpage</u></strong></label>
+                </li>
+                <img src="./assets/thisweb.png" alt="temp image">
+                <li>
+                    <p>This is the current webpage you are on!</p>
+                </li>
+            </ul>
+         </section>
+    </div>        
+        <section class="contact-me">
+            <h2 class="contact-me-title">Contact information</h2>
+            <ul>
+                <li><strong>Email:</strong> hannah2edwards3@gmail.com</li>
+                <li><strong>GitHub:</strong> https://github.com/hannahedwards</li>
+                <li><strong>Linkin:</strong> coming soon</li>
             </ul>
         </section>
+    </main>      
 </body>
